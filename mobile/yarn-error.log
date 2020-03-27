@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/local/Cellar/node/12.10.0/bin/node /usr/local/Cellar/yarn/1.19.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  12.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.19.0/libexec/lib/cli.js:141199:19)
+      at listOnTimeout (internal/timers.js:531:17)
+      at processTimers (internal/timers.js:475:7)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~36.0.0",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "~8.0.0",
+      "@babel/core": "^7.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
